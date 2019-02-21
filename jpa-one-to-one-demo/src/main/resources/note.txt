@@ -1,0 +1,15 @@
+
+
+Let’s now understand how the above entity classes define a one-to-one relationship.
+
+A one-to-one relationship is defined using JPA’s @OneToOne annotation. It accepts several attributes. Let’s understand what those attributes are meant for -
+
+fetch = FetchType.LAZY - Fetch the related entity lazily from the database.
+
+cascade = CascadeType.ALL - Apply all cascading effects to the related entity. That is, whenever we update/delete a User entity, update/delete the corresponding UserProfile as well.
+
+mappedBy = “user” - We use mappedBy attribute in the User entity to tell hibernate that the User entity is not responsible for this relationship and It should look for a field named user in the UserProfile entity to find the configuration for the JoinColumn/ForeignKey column.
+
+In a bi-directional relationship, we specify @OneToOne annotation on both the entities but only one entity is the owner of the relationship. Most often, the child entity is the owner of the relationship and the parent entity is the inverse side of the relationship.
+
+The owner of the relationship contains a @JoinColumn annotation to specify the foreign key column, and the inverse-side of the relationship contains a mappedBy attribute to indicate that the relationship is mapped by the other entity.
