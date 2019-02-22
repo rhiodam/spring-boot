@@ -1,5 +1,8 @@
 package com.rhiodamuthie.poolsbackend.config;
 
+import com.rhiodamuthie.poolsbackend.security.CustomUserDetailsService;
+import com.rhiodamuthie.poolsbackend.security.JwtAuthenticationEntryPoint;
+import com.rhiodamuthie.poolsbackend.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

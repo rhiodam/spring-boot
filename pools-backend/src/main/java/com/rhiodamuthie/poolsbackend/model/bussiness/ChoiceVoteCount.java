@@ -1,6 +1,10 @@
 package com.rhiodamuthie.poolsbackend.model.bussiness;
 
+import javax.persistence.Entity;
+
+//@Entity
 public class ChoiceVoteCount {
+
     private Long choiceId;
     private Long voteCount;
 
