@@ -11,8 +11,11 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.rhiodamuthie.springbootrest.web.hateoas.event.PaginatedResultsRetrievedEvent;
 import com.rhiodamuthie.springbootrest.web.util.LinkUtil;
+//import com.google.;
+
 import com.google.common.base.Preconditions;
 import com.google.common.net.HttpHeaders;
+//import static com.google.base.Preconditions.*;
 
 @SuppressWarnings({ "rawtypes" })
 @Component
